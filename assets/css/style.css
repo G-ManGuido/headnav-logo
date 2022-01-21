@@ -1,0 +1,160 @@
+
+@font-face{
+  font-family: "Pmarker";
+  src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+@font-face {
+  font-family: 'skulls';
+  src: url(../fonts/skullz/skullz.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #222;
+}
+
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  background: #0f0;
+  background: #000;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  height: 75px;
+}
+.head {
+  width: 100%;
+  margin: 0 auto;
+  background: #1877F2;
+    /* background: #000; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#logo {
+    position: fixed;
+    top: 0;
+    margin: 10px 0 0 0;
+    z-index: 9999;
+    background-color: yellowgreen;
+     /* background: #000; */
+    line-height: 0;
+    display: flex;
+    
+}
+
+header section div img{
+  margin-left: 10%;
+}
+
+
+/* .grow {
+    padding: 1.25em 0;
+    transition: 0.9s ease-in-out;
+} */
+
+.grow img {
+    width: 100%;
+    transition: 0.9s ease-in-out;
+}
+
+/* .shrink {
+    padding: 1rem 0;
+    transition: 0.9s ease-in-out;
+} */
+
+.shrink img {
+    width: 450px;
+    transition: 0.9s ease-in-out;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid rgb(173, 0, 0); 
+  text-align: right;
+  position: fixed;
+  top: 0px;
+  display: block;
+  color: #efefef;
+  font-family: "Pmarker";
+  font-size: 1rem;
+  background: tomato;
+  /* background: #000; */
+}
+
+NAV UL {
+  margin: -6px auto 0 auto;
+  padding-top: 30px;
+  width: 80%;
+}
+
+ NAV LI {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;     
+}
+
+NAV LI A { 
+    color: #efefef; 
+    text-decoration: none;
+    margin: 0;
+}
+
+NAV LI A::before{
+font-family: "skulls";
+font-size: 1rem; 
+content: "t";
+opacity: 0;   
+padding-right: 4px;
+padding-top:2px;         
+}
+
+NAV LI A:hover { 
+  transition: all .5s linear;
+  color: #fff;
+  text-shadow: 0px 0px 4px yellowgreen;
+}
+NAV LI A:hover::before{
+font-family: "skulls";
+font-size: 1rem; 
+content: "t";
+color: #fff;    
+opacity: 1;        
+text-shadow: 0px 0px 4px yellowgreen;
+padding-right: 4px;
+padding-top:2px;   
+}
+
+
+
+
+
+
+
+/* HEADER ENDE */
+
+main{
+  width: 100%;
+  background: yellow;
+}
+section {
+  width: 80%;
+  background: violet;
+  margin: 0 auto;
+}
+section div {
+
+    color: yellowgreen;
+    font-size: 6rem;
+}
+

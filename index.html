@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>untitled document</title>
+
+
+</head>
+
+<body>
+    <!-- <div id="bar"></div> -->
+    <header>
+        <section class="head">
+            <div id="logo" class="grow">
+                <img src="assets/img/TEM-logo-big.jpg" alt="The Early Madonnas">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Band</a></li>
+                    <li><a href="#">Musik</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+                <div>-----</div>
+            </article>
+        </section>
+    </main>
+
+
+
+    <script>
+        (function () {
+            'use strict';
+            var he = document.getElementById('logo');
+            var startShrink = 250;
+            window.addEventListener('scroll',
+                function () {
+                    if (window.pageYOffset > startShrink) {
+                        he.classList.remove('grow');
+                        he.classList.add('shrink');
+                    }
+                    else {
+                        he.classList.remove('shrink');
+                        he.classList.add('grow');
+                    }
+                }, false);
+        }());
+    </script>
+</body>
+
+</html>
